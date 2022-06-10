@@ -7,7 +7,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 
     background: url("../images/bg_01-01.jpg") no-repeat center top;
-    background-size: 100%
+    background-size: 100%;
 }
 
 /* 내비게이션 영역 -----------------------------------------------*/
@@ -219,6 +219,7 @@ body {
     font-weight: bold;
     -webkit-text-stroke: 1px #b52218;
     line-height: 100px;
+    padding-bottom: 80px;
 }
 #merit_content::after { content: ""; display: block; clear: both; }
 #merit_content > li {

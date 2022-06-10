@@ -1,11 +1,13 @@
 $(function () {
 
     // 문서가 로드되면 첫 페이지로 이동
-    // $("html").animate({ "scrollTop": 0}, 100);
+    $("html").animate({ "scrollTop": 0}, 100);
 
-    var $window = $(window);
-
+    
     // 고정 메뉴바 이벤트
+    
+    var $window = $(window);
+    
     var $nav = $("#nav");
     var $navColor = $("#nav > ul > li > a");
     var navTop = $nav.offset().top;
@@ -29,7 +31,9 @@ $(function () {
         }
     });
     
+
     // 마우스 스크롤 이벤트
+
     var offset_profile = $("#profile").offset();
     var offset_web = $("#web").offset();
     var offset_other = $("#other").offset();
@@ -128,6 +132,7 @@ $(function () {
 
     // 프로필_텍스트/이력서_타이틀
     // : 해당 위치에 도달하면 각각의 영역들이 숨어있다가 등장하는 이벤트
+
     var $pText1 = $("#p_con_wrap1");
     var $pText2 = $("#p_con_wrap2");
     var $rTitle = $("#r_title");
@@ -159,6 +164,7 @@ $(function () {
 
     // 웹디자인
     // : bullet들로 이동할 수 있는 이미지 갤러리
+
     var $w_slide = $("#web_slide");
     var $w_slideImg = $("#web_slide > li");
 
@@ -223,6 +229,7 @@ $(function () {
         slideImage();
     });
 
+
     // 아더디자인_배너
     // 오버레이 창을 띄우고 해당 이미지와 설정을 크게 보여주는 이벤트(페이드 효과)
     
@@ -261,7 +268,24 @@ $(function () {
         event.stopPropagation();
     });
 
-    // 스크롤 텍스트
+
+    // 스크롤 텍스트 이동
+
     var $pContainer = $("#p_container");
+    var $meritTitle = $("#merit_title");
+
+    var pTop = $pContainer.offset().top;
+    var mScollTop = $pContainer.height();
+
+    $window.on("scroll", function () {
+        var scrollTop = $window.scrollTop();
+        var scrollingTop = scrollTop - pTop;
+
+        var ratio = scrollingTop / mScollTop;
+
+        if (ratio <= 1)
+            $meritTitle.css("margin-left", 400 * ratio);
+    });
+
 
 });
