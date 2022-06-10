@@ -1,0 +1,945 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sacheon Sub</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/sub_sacheon_index.css">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="js/sub_sacheon_index.js"></script>
+    </head>
+    <body>
+
+        <!-- 유틸리티 영역 -->
+        <div id="utility">
+
+            <div id="u_wrap1">
+                <span>경상남도 사천시</span>
+                <ul>
+                    <li><a href="#행정전화번호부">행정전화번호부</a></li>
+                    <li><a href="#로그인">로그인</a></li>
+                    <li><a href="#회원가입">회원가입</a></li>
+                </ul>
+            </div> <!-- /#u_wrap1 -->
+
+            <div id="u_wrap2">
+                <a href="index.html" id="logo"><img src="images/con_07.png" alt="logo"></a>
+                <div id="search">
+                    <form id="form" name="form" method="get" action="/server/program">
+                        <input type="text" name="search_input" placeholder="검색어를 입력하세요.">
+                        <button id="search_btn" type="submit" title="검색">
+                            <span>Search-Icon</span>
+                        </button>
+                    </form>
+                </div> <!-- /#search -->
+                <ul>
+                    <li><a href="#more">HOME</a></li>
+                    <li><a href="#sitemap">SITEMAP</a></li>
+                    <li><a href="#language">LANGUAGE ▽</a></li>
+                </ul>
+            </div> <!-- /#u_wrap2 -->
+
+        </div> <!-- /#utility -->
+
+        <!-- 내비게이션 영역 -->
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="sub_index.html">정보공개/민원</a>
+                    <div class="slidedown_wrap">
+                        <div>
+                        <span>정보공개/민원</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">행정정보공개</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">행정정보공개</a></li>
+                                    <li><a href="sub_index.html">공공데이터개방</a></li>
+                                    <li><a href="sub_index.html">주요시책</a></li>
+                                    <li><a href="sub_index.html">재정현황</a></li>
+                                    <li><a href="sub_index.html">통계</a></li>
+                                    <li><a href="sub_index.html">조직정보 공개</a></li>
+                                    <li><a href="sub_index.html">행정서비스헌장</a></li>
+                                    <li><a href="sub_index.html">계약정보</a></li>
+                                    <li><a href="sub_index.html">세입세출예산 운용정보공개</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">종합민원안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">민원처리과정 안내</a></li>
+                                    <li><a href="sub_index.html">민원 편람(서식)</a></li>
+                                    <li><a href="sub_index.html">건축민원서식(세움터)</a></li>
+                                    <li><a href="sub_index.html">주요민원 부서 안내</a></li>
+                                    <li><a href="sub_index.html">민원편의시책</a></li>
+                                    <li><a href="sub_index.html">민원실 창구안내</a></li>
+                                    <li><a href="sub_index.html">무인민원발급창구</a></li>
+                                    <li><a href="sub_index.html">110정부민원안내콜</a></li>
+                                    <li><a href="sub_index.html">본인정보공동이용</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">전자민원창구</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">민원시청(국민신문고)</a></li>
+                                    <li><a href="sub_index.html">신청민원조회(나의민원보기)</a></li>
+                                    <li><a href="sub_index.html">서식민원처리공개</a></li>
+                                    <li><a href="sub_index.html">서식민원처리조회</a></li>
+                                    <li><a href="sub_index.html">행정처분안내</a></li>
+                                    <li><a href="sub_index.html">정부24(민원24)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">지방세 안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">알기쉬운 지방세</a></li>
+                                    <li><a href="sub_index.html">2021년 달라지는 지방세 내용</a></li>
+                                    <li><a href="sub_index.html">지방세 납부방법</a></li>
+                                    <li><a href="sub_index.html">지방세미리계산해보기</a></li>
+                                    <li><a href="sub_index.html">시간표준액조회</a></li>
+                                    <li><a href="sub_index.html">지방세자료실</a></li>
+                                    <li><a href="sub_index.html">부동산 공시가격 열람</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">자동차 민원 안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">자동차등록</a></li>
+                                    <li><a href="sub_index.html">건설기계등록</a></li>
+                                    <li><a href="sub_index.html">이륜차등록</a></li>
+                                    <li><a href="sub_index.html">자동차검사/의무보험</a></li>
+                                    <li><a href="sub_index.html">건설기계정기검사안내</a></li>
+                                    <li><a href="sub_index.html">구비서류 양식</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#뉴스/미디어">뉴스/미디어</a>
+                    <div class="slidedown_wrap">
+
+                        <div>
+                        <span>뉴스/미디어</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">시정소식</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">공지사항</a></li>
+                                    <li><a href="sub_index.html">공고/고시/시험</a></li>
+                                    <li><a href="sub_index.html">타기관 공고/고시</a></li>
+                                    <li><a href="sub_index.html">사천시 공보</a></li>
+                                    <li><a href="sub_index.html">보도/해명자료</a></li>
+                                    <li><a href="sub_index.html">주간행사</a></li>
+                                    <li><a href="sub_index.html">행사/축제/공연</a></li>
+                                    <li><a href="sub_index.html">유관기관 소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">시정홍보</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">시정뉴스</a></li>
+                                    <li><a href="sub_index.html">사천소식지(사천N)</a></li>
+                                    <li><a href="sub_index.html">시공식 블로그</a></li>
+                                    <li><a href="sub_index.html">코로나19관련 사천시 브리핑 자료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">포토갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">새로운 사진</a></li>
+                                    <li><a href="sub_index.html">분류별사진보기</a></li>
+                                    <li><a href="sub_index.html">상세검색</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">영상갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="#">홍보동영상</a></li>
+                                    <li><a href="#">관광홍보동영상</a></li>
+                                    <li><a href="#">사천VR</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">추천공공저작물</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#기업/경제">기업/경제</a>
+                    <div class="slidedown_wrap">
+
+                        <div>
+                        <span>기업/경제</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">여권발급안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">야간여권창구 운영안내</a></li>
+                                    <li><a href="sub_index.html">여권개요</a></li>
+                                    <li><a href="sub_index.html">여권발급</a></li>
+                                    <li><a href="sub_index.html">여권발급 수수료</a></li>
+                                    <li><a href="sub_index.html">여권사진 규정</a></li>
+                                    <li><a href="sub_index.html">로마자성명표기</a></li>
+                                    <li><a href="sub_index.html">여권수령안내</a></li>
+                                    <li><a href="sub_index.html">여권 보관/반납/분실/습득</a></li>
+                                    <li><a href="sub_index.html">여권민원 서식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">시민마당</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">시정아이디어뱅크</a></li>
+                                    <li><a href="sub_index.html">칭찬합시다</a></li>
+                                    <li><a href="sub_index.html">자유게시판</a></li>
+                                    <li><a href="sub_index.html">정책토론</a></li>
+                                    <li><a href="sub_index.html">설문조사</a></li>
+                                    <li><a href="sub_index.html">주민참여예산</a></li>
+                                    <li><a href="sub_index.html">국민생각함</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">정보통신사용전검사</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">정보통신민원</a></li>
+                                    <li><a href="sub_index.html">사용전 검사 필증 출력</a></li>
+                                    <li><a href="sub_index.html">한국정보통신공사협회</a></li>
+                                    <li><a href="sub_index.html">각종서식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">건축민원안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">건축행정</a></li>
+                                    <li><a href="sub_index.html">공지사항</a></li>
+                                    <li><a href="sub_index.html">주택행정정보</a></li>
+                                    <li><a href="sub_index.html">건축행정정보</a></li>
+                                    <li><a href="sub_index.html">빈집정보센터</a></li>
+                                    <li><a href="sub_index.html">옥외광고</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">신고센터</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">국민생활불편신고</a></li>
+                                    <li><a href="sub_index.html">Clean신고 및 공무원 등 부조리신고</a></li>
+                                    <li><a href="sub_index.html">환경신문고</a></li>
+                                    <li><a href="sub_index.html">식품안전소비자신고센터</a></li>
+                                    <li><a href="sub_index.html">예산낭비신고</a></li>
+                                    <li><a href="sub_index.html">청탁금지법 상담</a></li>
+                                    <li><a href="sub_index.html">안전신문고</a></li>
+                                    <li><a href="sub_index.html">국무조정실 규제개혁신문고</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#복지/생활">복지/생활</a>
+                    <div class="slidedown_wrap">
+
+                        <div>
+                        <span>복지/생활</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">행정정보공개</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">행정정보공개</a></li>
+                                    <li><a href="sub_index.html">공공데이터개방</a></li>
+                                    <li><a href="sub_index.html">주요시책</a></li>
+                                    <li><a href="sub_index.html">재정현황</a></li>
+                                    <li><a href="sub_index.html">통계</a></li>
+                                    <li><a href="sub_index.html">조직정보 공개</a></li>
+                                    <li><a href="sub_index.html">행정서비스헌장</a></li>
+                                    <li><a href="sub_index.html">계약정보</a></li>
+                                    <li><a href="sub_index.html">세입세출예산 운용정보공개</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">종합민원안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">민원처리과정 안내</a></li>
+                                    <li><a href="sub_index.html">민원 편람(서식)</a></li>
+                                    <li><a href="sub_index.html">건축민원서식(세움터)</a></li>
+                                    <li><a href="sub_index.html">주요민원 부서 안내</a></li>
+                                    <li><a href="sub_index.html">민원편의시책</a></li>
+                                    <li><a href="sub_index.html">민원실 창구안내</a></li>
+                                    <li><a href="sub_index.html">무인민원발급창구</a></li>
+                                    <li><a href="sub_index.html">110정부민원안내콜</a></li>
+                                    <li><a href="sub_index.html">본인정보공동이용</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">전자민원창구</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">민원시청(국민신문고)</a></li>
+                                    <li><a href="sub_index.html">신청민원조회(나의민원보기)</a></li>
+                                    <li><a href="sub_index.html">서식민원처리공개</a></li>
+                                    <li><a href="sub_index.html">서식민원처리조회</a></li>
+                                    <li><a href="sub_index.html">행정처분안내</a></li>
+                                    <li><a href="sub_index.html">정부24(민원24)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">지방세 안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">알기쉬운 지방세</a></li>
+                                    <li><a href="sub_index.html">2021년 달라지는 지방세 내용</a></li>
+                                    <li><a href="sub_index.html">지방세 납부방법</a></li>
+                                    <li><a href="sub_index.html">지방세미리계산해보기</a></li>
+                                    <li><a href="sub_index.html">시간표준액조회</a></li>
+                                    <li><a href="sub_index.html">지방세자료실</a></li>
+                                    <li><a href="sub_index.html">부동산 공시가격 열람</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">자동차 민원 안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">자동차등록</a></li>
+                                    <li><a href="sub_index.html">건설기계등록</a></li>
+                                    <li><a href="sub_index.html">이륜차등록</a></li>
+                                    <li><a href="sub_index.html">자동차검사/의무보험</a></li>
+                                    <li><a href="sub_index.html">건설기계정기검사안내</a></li>
+                                    <li><a href="sub_index.html">구비서류 양식</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#농수산/체험">농수산/체험</a>
+                    <div class="slidedown_wrap">
+
+                        <div>
+                        <span>농수산/체험</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">시정소식</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">공지사항</a></li>
+                                    <li><a href="sub_index.html">공고/고시/시험</a></li>
+                                    <li><a href="sub_index.html">타기관 공고/고시</a></li>
+                                    <li><a href="sub_index.html">사천시 공보</a></li>
+                                    <li><a href="sub_index.html">보도/해명자료</a></li>
+                                    <li><a href="sub_index.html">주간행사</a></li>
+                                    <li><a href="sub_index.html">행사/축제/공연</a></li>
+                                    <li><a href="sub_index.html">유관기관 소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">시정홍보</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">시정뉴스</a></li>
+                                    <li><a href="sub_index.html">사천소식지(사천N)</a></li>
+                                    <li><a href="sub_index.html">시공식 블로그</a></li>
+                                    <li><a href="sub_index.html">코로나19관련 사천시 브리핑 자료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">포토갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">새로운 사진</a></li>
+                                    <li><a href="sub_index.html">분류별사진보기</a></li>
+                                    <li><a href="sub_index.html">상세검색</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">영상갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">홍보동영상</a></li>
+                                    <li><a href="sub_index.html">관광홍보동영상</a></li>
+                                    <li><a href="sub_index.html">사천VR</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">적극행정</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">적극행정과 소극행정 정의</a></li>
+                                    <li><a href="sub_index.html">적극행정 추진 방안</a></li>
+                                    <li><a href="sub_index.html">적극행정 및 소극행정 사례</a></li>
+                                    <li><a href="sub_index.html">적극행정 시민 추천</a></li>
+                                    <li><a href="sub_index.html">적극행정 통합 플랫폼</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#항공우주">항공우주</a>
+                    <div class="slidedown_wrap">
+
+                        <div>
+                        <span>항공우주</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">여권발급안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">야간여권창구 운영안내</a></li>
+                                    <li><a href="sub_index.html">여권개요</a></li>
+                                    <li><a href="sub_index.html">여권발급</a></li>
+                                    <li><a href="sub_index.html">여권발급 수수료</a></li>
+                                    <li><a href="sub_index.html">여권사진 규정</a></li>
+                                    <li><a href="sub_index.html">로마자성명표기</a></li>
+                                    <li><a href="sub_index.html">여권수령안내</a></li>
+                                    <li><a href="sub_index.html">여권 보관/반납/분실/습득</a></li>
+                                    <li><a href="sub_index.html">여권민원 서식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">시민마당</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">시정아이디어뱅크</a></li>
+                                    <li><a href="sub_index.html">칭찬합시다</a></li>
+                                    <li><a href="sub_index.html">자유게시판</a></li>
+                                    <li><a href="sub_index.html">정책토론</a></li>
+                                    <li><a href="sub_index.html">설문조사</a></li>
+                                    <li><a href="sub_index.html">주민참여예산</a></li>
+                                    <li><a href="sub_index.html">국민생각함</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">정보통신사용전검사</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">정보통신민원</a></li>
+                                    <li><a href="sub_index.html">사용전 검사 필증 출력</a></li>
+                                    <li><a href="sub_index.html">한국정보통신공사협회</a></li>
+                                    <li><a href="sub_index.html">각종서식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">건축민원안내</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">건축행정</a></li>
+                                    <li><a href="sub_index.html">공지사항</a></li>
+                                    <li><a href="sub_index.html">주택행정정보</a></li>
+                                    <li><a href="sub_index.html">건축행정정보</a></li>
+                                    <li><a href="sub_index.html">빈집정보센터</a></li>
+                                    <li><a href="sub_index.html">옥외광고</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">신고센터</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">국민생활불편신고</a></li>
+                                    <li><a href="sub_index.html">Clean신고 및 공무원 등 부조리신고</a></li>
+                                    <li><a href="sub_index.html">환경신문고</a></li>
+                                    <li><a href="sub_index.html">식품안전소비자신고센터</a></li>
+                                    <li><a href="sub_index.html">예산낭비신고</a></li>
+                                    <li><a href="sub_index.html">청탁금지법 상담</a></li>
+                                    <li><a href="sub_index.html">안전신문고</a></li>
+                                    <li><a href="sub_index.html">국무조정실 규제개혁신문고</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#사천소개">사천소개</a>
+                    <div class="slidedown_wrap">
+
+                        <div>
+                        <span>사천소개</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">시정소식</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">공지사항</a></li>
+                                    <li><a href="sub_index.html">공고/고시/시험</a></li>
+                                    <li><a href="sub_index.html">타기관 공고/고시</a></li>
+                                    <li><a href="sub_index.html">사천시 공보</a></li>
+                                    <li><a href="sub_index.html">보도/해명자료</a></li>
+                                    <li><a href="sub_index.html">주간행사</a></li>
+                                    <li><a href="sub_index.html">행사/축제/공연</a></li>
+                                    <li><a href="sub_index.html">유관기관 소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">시정홍보</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">시정뉴스</a></li>
+                                    <li><a href="sub_index.html">사천소식지(사천N)</a></li>
+                                    <li><a href="sub_index.html">시공식 블로그</a></li>
+                                    <li><a href="sub_index.html">코로나19관련 사천시 브리핑 자료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">포토갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">새로운 사진</a></li>
+                                    <li><a href="sub_index.html">분류별사진보기</a></li>
+                                    <li><a href="sub_index.html">상세검색</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">영상갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">홍보동영상</a></li>
+                                    <li><a href="sub_index.html">관광홍보동영상</a></li>
+                                    <li><a href="sub_index.html">사천VR</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">적극행정</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">적극행정과 소극행정 정의</a></li>
+                                    <li><a href="sub_index.html">적극행정 추진 방안</a></li>
+                                    <li><a href="sub_index.html">적극행정 및 소극행정 사례</a></li>
+                                    <li><a href="sub_index.html">적극행정 시민 추천</a></li>
+                                    <li><a href="sub_index.html">적극행정 통합 플랫폼</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="sub_index.html">문화관광</a>
+                    <div class="slidedown_wrap">
+
+                        <div>
+                        <span>문화관광</span>
+                        <ul class="slidedown">
+                            <li>
+                                <a href="sub_index.html">시정소식</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">공지사항</a></li>
+                                    <li><a href="sub_index.html">공고/고시/시험</a></li>
+                                    <li><a href="sub_index.html">타기관 공고/고시</a></li>
+                                    <li><a href="sub_index.html">사천시 공보</a></li>
+                                    <li><a href="sub_index.html">보도/해명자료</a></li>
+                                    <li><a href="sub_index.html">주간행사</a></li>
+                                    <li><a href="sub_index.html">행사/축제/공연</a></li>
+                                    <li><a href="sub_index.html">유관기관 소식</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">시정홍보</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">시정뉴스</a></li>
+                                    <li><a href="sub_index.html">사천소식지(사천N)</a></li>
+                                    <li><a href="sub_index.html">시공식 블로그</a></li>
+                                    <li><a href="sub_index.html">코로나19관련 사천시 브리핑 자료</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">포토갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">새로운 사진</a></li>
+                                    <li><a href="sub_index.html">분류별사진보기</a></li>
+                                    <li><a href="sub_index.html">상세검색</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">영상갤러리</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">홍보동영상</a></li>
+                                    <li><a href="sub_index.html">관광홍보동영상</a></li>
+                                    <li><a href="sub_index.html">사천VR</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="sub_index.html">적극행정</a>
+                                <ul class="small_category">
+                                    <li><a href="sub_index.html">적극행정과 소극행정 정의</a></li>
+                                    <li><a href="sub_index.html">적극행정 추진 방안</a></li>
+                                    <li><a href="sub_index.html">적극행정 및 소극행정 사례</a></li>
+                                    <li><a href="sub_index.html">적극행정 시민 추천</a></li>
+                                    <li><a href="sub_index.html">적극행정 통합 플랫폼</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav> <!-- /#nav -->
+
+        <!-- 뎁스 영역 -->
+        <div id="loc_wrap">
+            <nav id="location">
+                <ul>
+                    <li id="home_icon"><a href="#">
+                        <img src="images/sub_icon_03.jpg" alt="home-icon">
+                    </a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">정보공개제도안내</a></li>
+                    <li><a href="#">정보공개제도란?</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 사이드바/컨텐츠 영역 -->
+        <div id="con_container">
+
+            <aside id="sidebar">
+                <div id="side_title">
+                    <h1>행정정보공개</h1>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">행정정보공개</a>
+                        <ul id="side_sub">
+                            <li class="on"><a href="#">정보공개제도안내</a></li>
+                            <li><a href="#">사전정보 공표 목록</a></li>
+                            <li><a href="#">비공개 대상정보 세부기준</a></li>
+                            <li><a href="#">정보공개청구</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공공데이터개방</a></li>
+                    <li><a href="#">주요시책</a></li>
+                    <li><a href="#">재정현황</a></li>
+                    <li><a href="#">통계</a></li>
+                    <li><a href="#">조직정보 공개</a></li>
+                    <li><a href="#">행정서비스헌장</a></li>
+                    <li><a href="#">계약정보</a></li>
+                    <li><a href="#">세입세출예산 운영정보</a></li>
+                    <li><a href="#">행정규제개혁</a></li>
+                    <li><a href="#">법무행정종합정보</a></li>
+                    <li><a href="#">정책실명제</a></li>
+                    <li><a href="#">적극행정 면책제도</a></li>
+                    <li><a href="#">개인정보 제3자 제공</a></li>
+                </ul>
+            </aside>
+
+            <article id="content">
+                <h1>정보제공제도안내</h1>
+                <ul id="table">
+                    <li class="on"><a href="#">정보제공제도란</a></li>
+                    <li><a href="#">정보공개 청구 및 처리절차</a></li>
+                    <li><a href="#">공개/비공개 대상정</a></li>
+                    <li><a href="#">정보공개방</a></li>
+                    <li><a href="#">불복구제절차</a></li>
+                    <li><a href="#">수수료 안내</a></li>
+                    <li><a href="#">정보공개관련 법령 및 서식</a></li>
+                </ul>
+                <h2>
+                    정보공개제도란?
+                </h2>
+                <section>
+                    <h3>
+                        정의
+                    </h3>
+                    <p class="li_style li_top">
+                        공공기관이 직무상 작성 또는 취득하여 보유·관리하고 있는 정보를 
+                        수요자인 국민의 청구에 의하여 열람, 사본, 복제 등의 형태로 
+                        청구인에게 공개하거나 청구가 없더라도 공공기관이 자발적으로 
+                        또는 법령 등의 규정에 따라 사전에 적극적으로 제공하여 국민의 
+                        알권리를 보장하고 국정에 참여토록 함으로써 국민의 권리와 이익을 
+                        보호하기 위한 제도를 말합니다.  
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        청구대상정보
+                    </h3>
+                    <p class="li_style li_top">
+                        공공기관이 직무상 작성 또는 취득하여 관리하고 있는 문서·도면·사진·필름·테이프·슬라이드 
+                        및 그 밖에 이에 준하는 매체에 기록된 사항<br>
+                        (법 제2조 제1호)<br>
+                        <strong id="red_text">※ 정보공개법의 ‘정보’에 해당하지 않는 정보</strong>  
+                    </p>
+                    <ul id="list_box">
+                        <li class="li_style">
+                            업무 참고자료로 활용하기 위해 비공식적으로 수집한 통계자료
+                        </li>
+                        <li class="li_style">
+                            관보·신문·잡지 등 불특정 다수인에게 판매를 목적으로 발간된 자료
+                        </li>
+                        <li class="li_style">
+                            현존하지 않는 정보 등
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        청구권자
+                    </h3>
+                    <ul class="list_texts">
+                        <li class="li_style">
+                            모든 국민(법인, 단체 포함)
+                        </li>
+                        <li class="li_style">
+                            외국인 국내에 일정한 주소를 두고 거주하거나 학술·연구를 위하여 
+                            일시적으로 체류하는 사람 국내에 사무소를 두고 있는 법인 또는 단체
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        청구대상기관
+                    </h3>
+                    <ul class="list_texts">
+                        <li class="li_style">
+                            국가기관(행정기관, 국회, 법원 등)
+                        </li>
+                        <li class="li_style">
+                            지방자치단체(시도 및 시군구, 산하 직속기관, 사업소, 출장소 등)
+                        </li>
+                        <li class="li_style">
+                            공공기관(공공기관의 운영에 관한 법률 제2조)
+                        </li>
+                        <li class="li_style">
+                            유아교육법, 초·중등교육법, 고등교육법, 그 밖의 다른 법률에 따라 설치된 학교
+                        </li>
+                        <li class="li_style">
+                            지방공기업법에 따른 지방공사 및 지방공단
+                        </li>
+                        <li class="li_style">
+                            지방자치단체 조례로 정하는 출자·출연 기관
+                        </li>
+                        <li class="li_style">
+                            특별법에 따라 설립된 특수법인(국민체육진흥공단, 한국은행, 한국방송공사 등)
+                        </li>
+                        <li class="li_style">
+                            국가나 지방자치단체로부터 보조금을 받는 사회복지법인, 사회복지사업을 하는 비영리법인(사회복지법 제42조제1항)
+                        </li>
+                        <li class="li_style">
+                            국가나 지방자치단체로부터 연간 5천만원 이상의 보조금을 받는 기관 또는 단체(보조금 관리에 관한 법률 제9조, 지방재정법 제17조제1항)
+                        </li>
+                    </ul>
+                </section>
+                <section id="contact">
+                    <ul>
+                        <li class="li_style">
+                            정보공개책임관 : 민원교통과장<strong>(055-831-2740)</strong>
+                        </li>
+                        <li class="li_style">
+                            정보공개담당자 : 민원교통과 민원팀 (<stron>055-831-2983</stron> / FAX 055-831-6094)
+                        </li>
+                    </ul>
+                </section>
+                <section id="open_wrap">
+                    <p>
+                        본 저작물은 <strong>"공공누리 제1유형 : 출처표시"</strong> 조건에 따라 이용할 수 있습니다.<br>
+                        - 사천시 저작권정책 참조 : 
+                        <a href="http://www.sacheon.go.kr/intro/01613/03180.web" id="open_link">
+                            http://www.sacheon.go.kr/intro/01613/03180.web
+                        </a><br>
+                        <a href="http://www.kogl.or.kr/info/licenseType2.do" id="open_icon">
+                            공공누리 유형안내
+                        </a>
+                    </p>
+                </section>
+                <div id="last_wrap">
+                    <ul id="phone">
+                        <li>담당자 | 민원교통과 민원팀</li>
+                        <li>
+                            <a href="#">055-831-2983</a>
+                        </li>
+                        <li>최종수정일 | 2021-12-22 16:21:04</li>
+                    </ul>
+                    <div id="form_radio">
+                        <form>
+                            <p>
+                                페이지의 내용이나 사용편의성에 만족하시나요?
+                                <label>
+                                    <input type="radio" name="favorite" value="5">5점
+                                </label>
+                                <label>
+                                    <input type="radio" name="favorite" value="4">4점
+                                </label>
+                                <label>
+                                    <input type="radio" name="favorite" value="3">3점
+                                </label>
+                                <label>
+                                    <input type="radio" name="favorite" value="2">2점
+                                </label>
+                                <label>
+                                    <input type="radio" name="favorite" value="1">1점
+                                </label>
+                            </p>
+                            <p id="submit">
+                                <input type="text" id="opinion" name="opinion" value="여러분의 소중한 의견을 남겨주세요."><br>
+                                <input type="submit" value="등록하기">
+                            </p>
+                        </form>
+                    </div>
+                </div> <!-- /#last_wrap -->
+            </article>
+
+        </div> <!-- /#con_container -->
+
+            <!-- 푸터 영역 -->
+        <footer id="footer">
+
+            <div id="coll_container">
+                <div class="coll_slide">
+                    <h3>배너모음</h3>
+                    <div id="c_plus"> 
+                        <a href="#">
+                            <span>
+                                공직선거비리<br>
+                                <b>익명신고센터</b>
+                            </span>
+                            <span>+</span>
+                        </a>
+                    </div>
+                    <div id="coll_wrap">
+                        <div id="coll_sl_wrap">
+                            <ul id="c_slide">
+                                <li>
+                                    <ul class="coll_line">
+                                        <li><a href="#"><img src="images/br20200526.png.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/bn20200410.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/bn202004101.jpg.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/br202002171.jpg.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/br20190927.small.jpg" alt="배너모음이미지"></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="coll_line">
+                                        <li><a href="#"><img src="images/br20180921.jpg.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/bn20180725_02.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/bn20190503.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/banner20180711.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/banner20180625.small.jpg" alt="배너모음이미지"></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="coll_line">
+                                        <li><a href="#"><img src="images/br20180625.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/banner20180509.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/br20180226.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/br201711141.small.jpg" alt="배너모음이미지"></a></li>
+                                        <li><a href="#"><img src="images/bn_20170913.jpg.small.jpg" alt="배너모음이미지"></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="c_prev"><span>Prev</span></button>
+                        <button id="c_next"><span>Next</span></button>
+                    </div>
+                </div>
+            </div> <!-- /#coll_container -->
+            
+            <div id="f_container">
+                <ul id="site_wrap">
+                    <li>
+                        <a href="#">부서별/직속기관 사업소</a>
+                        <span class="site_plus"><a href="#">+</a></span>
+                        <ul class="f_dropdown">
+                            <li><a href="#">기획예산담당관</a></li>
+                            <li><a href="#">공보감사담당관</a></li>
+                            <li><a href="#">행정과</a></li>
+                            <li><a href="#">혁신법무담당관</a></li>
+                            <li><a href="#">주민생활지원과</a></li>
+                            <li><a href="#">노인장애인과</a></li>
+                            <li><a href="#">여성가족과</a></li>
+                            <li><a href="#">세무과</a></li>
+                            <li><a href="#">회계과</a></li>
+                            <li><a href="#">문화체육과</a></li>
+                            <li><a href="#">관광진흥과</a></li>
+                            <li><a href="#">환경보호과</a></li>
+                            <li><a href="#">해양수산과</a></li>
+                            <li><a href="#">민원교통과</a></li>
+                            <li><a href="#">정보통신과</a></li>
+                            <li><a href="#">재난안전과</a></li>
+                            <li><a href="#">도시과</a></li>
+                            <li><a href="#">건축과</a></li>
+                            <li><a href="#">건설과</a></li>
+                            <li><a href="#">도로과</a></li>
+                            <li><a href="#">보건소</a></li>
+                            <li><a href="#">농업기술센터</a></li>
+                            <li><a href="#">평생학습센터</a></li>
+                            <li><a href="#">환경사업소</a></li>
+                            <li><a href="#">상하수도사업소</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">읍면동 사이트</a>
+                        <span class="site_plus"><a href="#">+</a></span>
+                        <ul class="f_dropdown">
+                            <li><a href="#">사천읍</a></li>
+                            <li><a href="#">정동면</a></li>
+                            <li><a href="#">사남면</a></li>
+                            <li><a href="#">용현면</a></li>
+                            <li><a href="#">축동면</a></li>
+                            <li><a href="#">곤양면</a></li>
+                            <li><a href="#">곤명면</a></li>
+                            <li><a href="#">서포면</a></li>
+                            <li><a href="#">동서동</a></li>
+                            <li><a href="#">선구동</a></li>
+                            <li><a href="#">동서금동</a></li>
+                            <li><a href="#">벌용동</a></li>
+                            <li><a href="#">향촌동</a></li>
+                            <li><a href="#">남양동</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">시군청/유관기관</a>
+                        <span class="site_plus"><a href="#">+</a></span>
+                        <ul class="f_dropdown">
+                            <li><a href="#">경상남도청</a></li>
+                            <li><a href="#">경상남도 창원시</a></li>
+                            <li><a href="#">경상남도 진주시</a></li>
+                            <li><a href="#">경상남도 통영시</a></li>
+                            <li><a href="#">경상남도 사천시</a></li>
+                            <li><a href="#">경상남도 김해시</a></li>
+                            <li><a href="#">경상남도 밀양시</a></li>
+                            <li><a href="#">경상남도 거제시</a></li>
+                            <li><a href="#">경상남도 양산시</a></li>
+                            <li><a href="#">경상남도 고성군</a></li>
+                            <li><a href="#">경상남도 남해군</a></li>
+                            <li><a href="#">경상남도 거창군</a></li>
+                            <li><a href="#">사천시의회</a></li>
+                            <li><a href="#">사천교육지원청</a></li>
+                            <li><a href="#">사천경찰서</a></li>
+                            <li><a href="#">사천소방서</a></li>
+                            <li><a href="#">사천우체국</a></li>
+                            <li><a href="#">한국전력공사</a></li>
+                            <li><a href="#">국민건강보험공단</a></li>
+                            <li><a href="#">한국농어촌공사</a></li>
+                            <li><a href="#">진주세무서</a></li>
+                            <li><a href="#">육군제39보병사단</a></li>
+                            <li><a href="#">국립농산물품질관리원</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="indiv_wrap">
+                    <ul id="individual">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">저작권 정책</a></li>
+                        <li><a href="#">네티켓</a></li>
+                        <li><a href="#">홈페이지 개선의견</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </div> <!-- /#indiv_wrap -->
+                <div id="contact_wrap">
+                    <ul id="contact_left">
+                        <li class="contact_strong">
+                            대표전화<br>
+                            (055)831-2114
+                        </li>
+                        <li class="contact_strong">
+                            대표팩스<br>
+                            (055)831-6000
+                        </li>
+                        <li>
+                            (52539) 경남 사천시 용현면 시청로 77<br>
+                            본 사이트에 게시된 이메일 주소의 자동수집을 거부하며,<br>
+                            이를 위반 시 개인 정보 보호법에 의해 형사 처벌됨을 유념하시기 바랍니다.
+                        </li>
+                    </ul>
+                    <ul id="contact_right">
+                        <li><a href="#">
+                            <img src="images/con_132.jpg" alt="과학기술정보통신부"></a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div> <!-- /#f_container -->
+
+        </footer> <!-- /#footer -->
+
+    </body>
+</html>
